@@ -3,7 +3,7 @@ import { Box, Button } from "@mui/material";
 import InstaLogo from "../../public/assets/InstagramLogo.svg";
 import Image from "next/image";
 import { doc, setDoc } from "firebase/firestore";
-import { auth, db, provider } from "@/Lib/firebase";
+import { auth, db, provider } from "@/Lib/Firebase";
 import { signInWithPopup } from "firebase/auth";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
