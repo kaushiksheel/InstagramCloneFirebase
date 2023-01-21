@@ -12,7 +12,7 @@ import {
   likePost,
   postIsLiked,
   unLikePost,
-} from "@/services/Firebase";
+} from "@/services/firebaseLogics";
 import { useAuthListener } from "@/hooks/useAuthListener";
 import { useState } from "react";
 

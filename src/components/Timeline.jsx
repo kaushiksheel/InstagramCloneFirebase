@@ -1,4 +1,4 @@
-import { db } from '@/Lib/Firebase'
+import { db } from '@/Lib/firebase'
 import { Box } from '@mui/material'
 import { collection, onSnapshot } from 'firebase/firestore'
 import React from 'react'

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useStorage } from "@/hooks/useStorage";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useAuthListener } from "@/hooks/useAuthListener";
-import { db } from "@/Lib/Firebase";
+import { db } from "@/Lib/firebase";
 import { CircularProgressWithLabel } from "./CircularProgressWithLabel";
 
 export const PostUploadModal = ({ openModal, handleCloseModal }) => {

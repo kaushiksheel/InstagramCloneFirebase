@@ -4,7 +4,7 @@ import { useState } from "react";
 import { updateProfile } from "firebase/auth";
 import { useAuthListener } from "@/hooks/useAuthListener";
 import { doc, updateDoc } from "firebase/firestore";
-import { db } from "@/Lib/Firebase";
+import { db } from "@/Lib/firebase";
 
 export const EditProfileModal = ({ openModal, closeModal }) => {
 

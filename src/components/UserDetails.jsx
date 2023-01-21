@@ -8,7 +8,7 @@ import {
   isFollowed,
   loggedUser,
   unFollowUser,
-} from "@/services/Firebase";
+} from "@/services/firebaseLogics";
 
 export const UserDetails = ({ postCount ,openModal}) => {
   const router = useRouter();

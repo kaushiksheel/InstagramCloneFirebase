@@ -2,7 +2,7 @@
 
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useEffect, useState } from "react";
-import { storage } from "../lib/Firebase";
+import { storage } from "../Lib/firebase";
 
 export const useStorage = (file) => {
   const [url, setUrl] = useState("");
