@@ -5,7 +5,7 @@ import React from "react";
 
 import { UserInfo } from "./UserInfo";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
-import { db } from "@/Lib/firebase";
+import { db } from "@/Lib/Firebase";
 import { followUser, isFollowed, unFollowUser } from "@/services/firebaseLogics";
 
 export const Sidebar = () => {

@@ -1,4 +1,4 @@
-import { auth } from "@/Lib/firebase";
+import { auth } from "@/Lib/Firebase";
 import React, { useState, useEffect } from "react";
 
 export const useAuthListener = () => {
