@@ -5,7 +5,7 @@ import {
   Timestamp,
   updateDoc,
 } from "firebase/firestore";
-import { db } from "../lib/firebase";
+import { db } from "../lib/Firebase";
 import { v4 as uuid } from "uuid";
 
 export const loggedUser = (loggedUserId, userId) => {
