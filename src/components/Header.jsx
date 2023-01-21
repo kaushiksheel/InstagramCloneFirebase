@@ -12,7 +12,7 @@ import { AppBar, Box, IconButton, Menu, MenuItem } from "@mui/material";
 import Link from "next/link";
 import { useAuthListener } from "@/hooks/useAuthListener";
 import { PostUploadModal } from "./PostUploadModal";
-import { auth } from "@/Lib/firebase";
+import { auth } from "../Lib/Firebase";
 import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import { themeState } from "@/pages/_app";
