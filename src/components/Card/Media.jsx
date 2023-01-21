@@ -3,7 +3,6 @@ import React from 'react'
 
 export const Media = ({img}) => {
 
-console.log(img)
 
   return (
     <Image

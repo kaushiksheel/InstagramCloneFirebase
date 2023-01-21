@@ -9,7 +9,7 @@ import { CircularProgressWithLabel } from "./CircularProgressWithLabel";
 
 export const PostUploadModal = ({ openModal, handleCloseModal }) => {
     const[caption,setCaption]=useState("")
-    const[file,setFile]=useState();
+    const[file,setFile]=useState(null);
     const {progress,url,setProgress,setUrl}=useStorage(file)
     
     const {user}=useAuthListener()
@@ -47,6 +47,7 @@ export const PostUploadModal = ({ openModal, handleCloseModal }) => {
         }).then(()=>{
           setProgress(0)
           setUrl("")
+          setFile(null)
           handleCloseModal()});
     }
              
