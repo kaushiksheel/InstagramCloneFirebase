@@ -1,7 +1,7 @@
 import { db } from '@/Lib/Firebase'
 import { currentThemeState } from '@/recoil/atoms/currentThemeState'
 import { stories } from '@/services/storiesData'
-import { Box } from '@mui/material'
+import { Box, useMediaQuery } from '@mui/material'
 import { collection, onSnapshot } from 'firebase/firestore'
 import Image from 'next/image'
 import React from 'react'
@@ -29,25 +29,28 @@ export const Timeline = () => {
       };
     }, []);
 
-
+    const matches = useMediaQuery('(min-width:800px)');
 
 
 
   return (
     <Box sx={{flex:1}}>
-      <Box sx={{ border:!darkMode &&"1px solid #dbdbdb",width:'100%',marginBottom:2,display:'flex',padding:2,columnGap:1 }}>
+      <Box sx={{ border:!darkMode &&"1px solid #dbdbdb",width:'100%',marginBottom:2,display:'flex',padding:2,gap:1.2 ,flexWrap:'wrap'}}>
         {stories.map(({id,src})=>
 <Image
 src={src}
 key={id}
+
 alt='user stories'
-width={250}
-height={250}
+width={150}
+height={150}
 style={{
-  width:50,
-  height:50,
+  width:56,
+  height:56,
   objectFit:'cover',
-  borderRadius:'100%'
+  borderRadius:'100%',
+  border:'2px solid hotpink',
+  padding:.7
 }}
 loading='lazy'
 />

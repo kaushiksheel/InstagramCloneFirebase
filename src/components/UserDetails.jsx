@@ -85,6 +85,7 @@ export const UserDetails = ({ postCount ,openModal}) => {
                 fontSize: 13,
                 paddingX: 3.4,
                 background: "#1877F2",
+                color:'white'
               }}
               variant="contained"
             >
