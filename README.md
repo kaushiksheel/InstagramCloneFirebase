@@ -1,9 +1,11 @@
+# Instagram Clone (PWA)
+
+
 ## Introduction
 
 This is a progressive web app Instagram clone built with Next.js, Firebase, and Material UI. It has the functionality of uploading posts, liking posts, commenting on posts, viewing user profiles, and following/unfollowing users.
 
 
-![thumbnail](blob:https://vercel.com/4dbb864d-c58f-4057-a21b-8573149a9420)
 
 
 ## Features
