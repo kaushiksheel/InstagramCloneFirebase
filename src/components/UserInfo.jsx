@@ -25,7 +25,11 @@ export const UserInfo = ({ img, username, fullname, sm,action ,uid,follow,user})
           <Typography color='text.secondary' fontSize={12}>{username}</Typography>
         </Box>
       </Box>
+      {sm
+      &&
+
       <Typography onClick={()=>follow(user)} sx={{cursor:'pointer',fontSize:13,textTransform:'capitalize'}}>{action}</Typography>
+      }
     </Box>
   );
 };

@@ -15,6 +15,7 @@ const theme = createTheme({
     typography: {
       fontFamily: 'Open Sans, Arial',
     },
+    
     components: {
       MuiCssBaseline: {
       
@@ -30,8 +31,8 @@ const theme = createTheme({
 
 
 return (
-    <ThemePrvdr theme={theme} darkMode={darkMode}>
-<CssBaseline />
+    <ThemePrvdr  theme={theme} darkMode={darkMode} >
+<CssBaseline el/>
 {children}
 </ThemePrvdr>
 )

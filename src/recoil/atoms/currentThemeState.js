@@ -1,14 +1,8 @@
-import { selector ,atom} from "recoil"
+import { themeState } from "@/pages/_app"
+import { selector } from "recoil"
 
 
 
-
-
-const themeState = atom({
-    key: 'themeState',
-    default: false,
-  });
-  
 
 
 
@@ -16,7 +10,7 @@ const themeState = atom({
 
 
 export const currentThemeState=selector({
-    key:'themeState',
+    key:'currentThemeState',
     get:({get})=>{
         const theme=get(themeState)
         return theme

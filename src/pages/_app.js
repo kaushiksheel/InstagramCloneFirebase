@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@/Context/ThemeProvider'
 import '@/styles/globals.css'
-import { atom, RecoilRoot } from 'recoil'
+import { atom, RecoilRoot } from 'recoil';
 
 
 export const themeState = atom({

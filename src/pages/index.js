@@ -23,7 +23,7 @@ const user=typeof window!=='undefined' && JSON.parse(localStorage.getItem("user"
     router.push('/login')
   }
   
-  },[router,user])
+  },[])
 
 
   const matches = useMediaQuery('(min-width:800px)');

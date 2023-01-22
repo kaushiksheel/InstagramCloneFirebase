@@ -19,6 +19,7 @@ import { useState } from "react";
 export const Actions = ({ post, postId,darkMode }) => {
   const { user } = useAuthListener();
   const [commentText, setCommentText] = useState("");
+  
 
   const handleLike = () => {
     postIsLiked(post, user?.uid)
@@ -78,7 +79,8 @@ export const Actions = ({ post, postId,darkMode }) => {
           ref={inputRef}
           style={{ width: "100%", height: 40, padding: 4,marginTop:12 ,
         background:darkMode && "#242424",
-        border:'none'
+        border:'none',
+        color:darkMode ?'white':'black'
         }}
           type="text"
           placeholder="Add a comment..."

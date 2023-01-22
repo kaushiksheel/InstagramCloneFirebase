@@ -26,7 +26,7 @@ export const Sidebar = () => {
     return () => {
       unsubscribe();
     };
-  }, [user]);
+  }, []);
 
   const handleFollow = (otherUser) => {
     isFollowed(user?.uid, otherUser)
