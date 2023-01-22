@@ -34,4 +34,4 @@ This is a progressive web app Instagram clone built with Next.js, Firebase, and 
 
 This project provides a basic implementation of an Instagram clone using Next.js, Firebase, and Material UI. It can be used as a starting point for building more complex applications. Feel free to fork the repository and add more features.
 
-[Live Site](https://instagram-clone-firebase-fztr5f0m0-devil5614737.vercel.app/login)
+[Live Site](https://instagram-clone-firebase.vercel.app/login)
