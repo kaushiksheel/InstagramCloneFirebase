@@ -10,10 +10,11 @@ This is a progressive web app Instagram clone built with Next.js, Firebase, and 
 
 ## Features
 
-- User registration and login
+- User  login with google
 - Uploading posts with caption and image
 - Liking and commenting on posts
 - Viewing user profiles and following/unfollowing users
+- Dark Mode
 
 ## Technologies
 
