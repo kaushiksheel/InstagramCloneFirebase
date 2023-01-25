@@ -6,12 +6,12 @@ export const Media = ({img}) => {
 
   return (
     <Image
-    style={{width:'100%',objectFit:'cover'}}
-    width={500}
-    height={450}
+    style={{objectFit:'cover'}}
     loading='lazy'
     src={img}
     alt='user dp'
+    fill
+
     />
   )
 }

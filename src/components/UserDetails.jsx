@@ -40,11 +40,9 @@ export const UserDetails = ({ postCount ,openModal}) => {
   return (
     <Box sx={{ display: "flex", columnGap: 6 }}>
       <Image
-        width={520}
-        height={520}
+        width={120}
+        height={120}
         style={{
-          width: 120,
-          height: 120,
           objectFit: "cover",
           borderRadius: "100%",
         }}

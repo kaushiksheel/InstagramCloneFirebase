@@ -4,7 +4,6 @@ import { Timeline } from "@/components/Timeline";
 import { Container } from "@/components/Container";
 import { Sidebar } from "@/components/Sidebar";
 import { Box, useMediaQuery } from "@mui/material";
-
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 

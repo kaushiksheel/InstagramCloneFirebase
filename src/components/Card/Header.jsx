@@ -16,7 +16,7 @@ export const Header = ({ postedBy }) => {
           src={photoURL}
           width={30}
           height={30}
-          alt="user dp"
+          alt={postedBy?.fullname + 'avatar'}
           loading="lazy"
           style={{ borderRadius: "100%", objectFit: "cover" }}
         />

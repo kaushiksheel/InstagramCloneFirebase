@@ -38,7 +38,7 @@ export const Sidebar = () => {
     <>
       <Box sx={{ width: 340 }}>
         <UserInfo
-          username="devil32"
+        
           fullname={user?.displayName}
           img={user?.photoURL}
           action={"switch"}

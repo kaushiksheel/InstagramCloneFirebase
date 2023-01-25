@@ -10,15 +10,13 @@ import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { themeState } from "./_app";
 
-
 function Login() {
-
   const [darkMode, setDarkMode] = useRecoilState(themeState);
 
-const router=useRouter();
+  const router = useRouter();
 
-const user=typeof window!=='undefined' && JSON.parse(localStorage.getItem("user"))
-
+  const user =
+    typeof window !== "undefined" && JSON.parse(localStorage.getItem("user"));
 
   const handleLogin = async () => {
     signInWithPopup(auth, provider)
@@ -27,21 +25,18 @@ const user=typeof window!=='undefined' && JSON.parse(localStorage.getItem("user"
 
         const { uid, displayName, email, photoURL } = user;
 
-
-
-
         if (user) {
           await setDoc(doc(db, "users", uid), {
             uid,
             displayName,
             email,
             photoURL,
-            followers:[],
-            following:[],
-  username:displayName.split(" ")[0]
+            followers: [],
+            following: [],
+            username: displayName.split(" ")[0],
           });
         }
-        router.push('/')
+        router.push("/");
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -49,29 +44,21 @@ const user=typeof window!=='undefined' && JSON.parse(localStorage.getItem("user"
       });
   };
 
-
-
-
-
-
-
-
-  
-  useEffect(()=>{
-  if(user){
-    router.push('/')
-  }
-  
-  },[router,user])
-
-
+  useEffect(() => {
+    if (user) {
+      router.push("/");
+    }
+  }, [router, user]);
 
   return (
     <Box sx={{ width: "100vw", height: "100vh", display: "grid" }}>
       <Box marginTop={12}>
         <Image
-          style={{ margin: "auto", display: "block",filter:darkMode&&"invert(1)" 
-        }}
+          style={{
+            margin: "auto",
+            display: "block",
+            filter: darkMode && "invert(1)",
+          }}
           width={203}
           height={109}
           src={InstaLogo}
@@ -81,12 +68,11 @@ const user=typeof window!=='undefined' && JSON.parse(localStorage.getItem("user"
         <Button
           sx={{
             border: "1px solid #dbdbdb",
-            color:darkMode?'white': "black",
+            color: darkMode ? "white" : "black",
             fontSize: 15,
             textTransform: "capitalize",
             margin: "auto",
             display: "block",
-
           }}
           disableElevation
           disableRipple

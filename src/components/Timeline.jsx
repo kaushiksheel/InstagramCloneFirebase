@@ -42,11 +42,9 @@ src={src}
 key={id}
 
 alt='user stories'
-width={150}
-height={150}
+width={56}
+height={56}
 style={{
-  width:56,
-  height:56,
   objectFit:'cover',
   borderRadius:'100%',
   border:'2px solid hotpink',

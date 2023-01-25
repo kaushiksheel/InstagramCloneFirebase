@@ -11,12 +11,13 @@ export const Posts = ({ posts }) => {
         {posts?.map(({ id, data: { image } }) => (
           <Grid key={id} item lg={4} xs={12} md={6}>
             <Image
-              width={500}
-              height={500}
+              width={273.33}
+              height={293}
               src={image}
               alt="user post"
+
               loading="lazy"
-              style={{ objectFit: "cover", width: "100%", height: 293 }}
+              style={{ objectFit: "cover"}}
             />
           </Grid>
         ))}
